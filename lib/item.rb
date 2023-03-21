@@ -18,7 +18,7 @@ class Item
 
   # @return [Float] the total price including taxes of the item
   def total_price
-    @total_price ||= (price + taxes)
+    @total_price ||= (price + taxes).round(2)
   end
 
   # @return [Float] the amount of taxes applied
